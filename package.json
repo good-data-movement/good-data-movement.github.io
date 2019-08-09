@@ -1,5 +1,5 @@
 {
-  "name": "gdm-website",
+  "name": "good-data-movement.github.io",
   "version": "0.1.0",
   "description": "Gatsby v2 website!",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/good-data-movement/gdm-website.git"
+    "url": "git+https://github.com/good-data-movement/good-data-movement.github.io.git"
   },
   "keywords": [
     "gatsby",
@@ -23,7 +23,7 @@
   "author": "@ps-george",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/good-data-movement/gdm-website/issues"
+    "url": "https://github.com/good-data-movement/good-data-movement.github.io/issues"
   },
   "homepage": "https://github.com/good-data-movement/manifesto#readme",
   "dependencies": {
