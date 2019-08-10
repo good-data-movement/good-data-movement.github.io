@@ -1,11 +1,11 @@
-import logo from './gatsby-icon.png';
-import logo2 from './gatsby-astronaut.png';
+import logoList from './logo';
 
 const people = [
   {
     id: 'gp',
     name: 'George Punter',
-    description: 'Hi',
+    description:
+      'How this person is changing the data world & how you could help.',
     social: [
       {
         id: 'github',
@@ -19,7 +19,7 @@ const people = [
     logo: {
       title: 'ps-george',
       image: {
-        src: logo,
+        src: logoList['gp.png'].src,
       },
     },
   },
