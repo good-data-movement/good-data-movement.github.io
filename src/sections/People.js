@@ -69,7 +69,7 @@ const TextContainer = styled.div`
   }
 `;
 
-const PersonContainer = styled.div`
+const ImageContainer = styled.div`
   margin: auto;
   width: ${CARD_HEIGHT};
 
@@ -155,8 +155,7 @@ const Person = ({ name, description, social, type, joinedDate, logo }) => (
 Person.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  social: PropTypes.object.isRequired,
-  repositoryUrl: PropTypes.string.isRequired,
+  social: PropTypes.any.isRequired,
   type: PropTypes.string.isRequired,
   joinedDate: PropTypes.string.isRequired,
   logo: PropTypes.shape({
@@ -180,4 +179,4 @@ const People = () => (
   </Section.Container>
 );
 
-export default Projects;
+export default People;
