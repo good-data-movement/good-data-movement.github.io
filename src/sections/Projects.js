@@ -74,7 +74,7 @@ const Project = ({
 }) => (
   <Card p={0}>
     <Flex style={{ height: CARD_HEIGHT }}>
-      <CardTextContainer style={{ height: CARD_HEIGHT }}>
+      <CardTextContainer>
         <span>
           <Title my={2} pb={1}>
             {name}
