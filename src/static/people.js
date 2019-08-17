@@ -1,4 +1,4 @@
-import logoList from './logo';
+import logoDict from './logo';
 
 const people = [
   {
@@ -19,7 +19,7 @@ const people = [
     logo: {
       title: 'ps-george',
       image: {
-        src: logoList['gp.png'].src,
+        src: logoDict['gp'].src,
       },
     },
   },
