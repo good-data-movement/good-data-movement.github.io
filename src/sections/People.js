@@ -115,8 +115,8 @@ Person.propTypes = {
 };
 
 const People = () => (
-  <Section.Container id="people" Background={Background}>
-    <Section.Header name="People" icon="🙋‍♂️" Box="notebook" />
+  <Section.Container id="" Background={Background}>
+    <Section.Header name="People" icon="🙋" Box="notebook" />
     <CardContainer minWidth="350px">
       {people.map((p, i) => (
         <Fade bottom delay={i * 200} key={p.id}>

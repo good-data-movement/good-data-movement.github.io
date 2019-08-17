@@ -8,7 +8,7 @@ import SEO from '../components/Seo';
 const PeoplePage = () => (
   <Layout>
     <SEO title="People" />
-    <Header />
+    <Header currentPath="/people" />
     <People />
     <Footer />
   </Layout>
