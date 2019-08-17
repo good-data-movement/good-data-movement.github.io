@@ -36,11 +36,9 @@ const Background = () => (
     />
 
     <Triangle
-      color="backgroundDark"
+      color="secondary"
       height={['20vh', '20vh']}
       width={['100vw', '100vw']}
-      invertX
-      invertY
     />
   </div>
 );
