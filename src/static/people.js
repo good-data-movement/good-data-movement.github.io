@@ -5,7 +5,7 @@ const people = [
     id: 'gp',
     name: 'George Punter',
     description:
-      'How this person is changing the data world & how you could help.',
+      'How this person is changing the data world & how you could help them.',
     social: [
       {
         id: 'github',
