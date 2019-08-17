@@ -45,7 +45,7 @@ We aim to consolidate and act as a central reference point for the many people f
 - Passionate individuals to Tweet & Share the message.
 - Open-source developers to contribute resources.
 
-See [CONTRIBUTING](https://github.com/good-data-movement/manifesto/CONTRIBUTING.md) for more information.
+See [CONTRIBUTING](https://github.com/good-data-movement/manifesto/blob/master/CONTRIBUTING.md) for more information.
 
 ⭐
 `;

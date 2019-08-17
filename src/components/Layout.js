@@ -1,16 +1,15 @@
 import React, { Fragment } from 'react';
 import { ThemeProvider } from 'emotion-theming';
 import { Global, css } from '@emotion/core';
-import styled from '@emotion/styled';
 
 import PropTypes from 'prop-types';
 import { ScrollingProvider } from 'react-scroll-section';
 import 'react-tippy/dist/tippy.css';
-import colors from '../../colors';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import colors from '../../colors';
 
 library.add(fab, faCoffee, faGlobe);
 

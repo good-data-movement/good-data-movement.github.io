@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Image, Flex } from 'rebass';
-import styled from '@emotion/styled';
+import { Box, Flex } from 'rebass';
 import ReactMarkdown from 'react-markdown';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
@@ -33,6 +32,7 @@ const Background = () => (
   </div>
 );
 
+/*
 const ProfilePicture = styled(Image)`
   border-radius: 50%;
   transition: all 0.25s ease-out;
@@ -41,6 +41,7 @@ const ProfilePicture = styled(Image)`
     border-radius: 20%;
   }
 `;
+*/
 
 const About = () => (
   <Section.Container id="about" Background={Background}>
