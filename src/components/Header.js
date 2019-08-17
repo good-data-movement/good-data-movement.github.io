@@ -6,6 +6,7 @@ import { SectionLinks } from 'react-scroll-section';
 import Fade from 'react-reveal/Fade';
 import RouteLink from './RouteLink';
 import Logo from '../static/gatsby-icon.png';
+import { navigate } from '@reach/router';
 
 const capitalize = s => s && s[0].toUpperCase() + s.slice(1);
 
@@ -35,7 +36,7 @@ const formatLinks = allLinks =>
     { links: [], home: null },
   );
 
-const Header = () => (
+const Header = ({ currentPath }) => (
   <HeaderContainer>
     <Fade top>
       <Flex
@@ -48,7 +49,7 @@ const Header = () => (
           {({ allLinks }) => {
             const { home, links } = formatLinks(allLinks);
 
-            const homeLink = home && (
+            const homeLink = home ? (
               <Image
                 src={Logo}
                 width="50px"
@@ -58,8 +59,29 @@ const Header = () => (
                   cursor: 'pointer',
                 }}
               />
+            ) : (
+              <Image
+                src={Logo}
+                width="50px"
+                alt="Portfolio Logo"
+                onClick={() => navigate('/')}
+                style={{
+                  cursor: 'pointer',
+                }}
+              />
             );
-            const navLinks = links.map(({ name, value }) => (
+
+            const peopleLink = (
+              <RouteLink
+                key="People"
+                onClick={() => navigate('/people')}
+                selected={currentPath == '/people'}
+              >
+                People
+              </RouteLink>
+            );
+
+            let navLinks = links.map(({ name, value }) => (
               <RouteLink
                 key={name}
                 onClick={value.onClick}
@@ -68,11 +90,15 @@ const Header = () => (
                 {name}
               </RouteLink>
             ));
-
             return (
               <Fragment>
                 {homeLink}
-                <Flex mr={[0, 3, 5]}>{navLinks}</Flex>
+                <Flex mr={[0, 3, 5]}>
+                  <Flex>{navLinks}</Flex>
+                  {/* Other links*/}
+                  {peopleLink}
+                  <Flex></Flex>
+                </Flex>
               </Fragment>
             );
           }}
