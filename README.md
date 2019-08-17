@@ -14,6 +14,9 @@ This website should act as a hub for the various projects & initiatives of the G
 ### Release 2: Fine-tune
 
 - [ ] Brand: GDM logo & colour theming.
+- [ ] Split block of text into window-sized chunks.
+- [ ] Add gif/png/icons alongside/with each chunk of text.
+- [ ] Snap between windows on scroll.
 
 ### Release 3: Collaboration
 
