@@ -23,31 +23,23 @@ import people from '../static/people';
 const Background = () => (
   <div>
     <Triangle
-      color="secondaryLight"
-      height={['80vh', '80vh']}
-      width={['100vw', '100vw']}
-      invertX
-    />
-
-    <Triangle
-      color="background"
-      height={['50vh', '20vh']}
-      width={['50vw', '50vw']}
-      invertX
+      color="backgroundDark"
+      height={['35vh', '80vh']}
+      width={['95vw', '60vw']}
     />
 
     <Triangle
       color="primaryDark"
-      height={['25vh', '40vh']}
+      height={['25vh', '35vh']}
       width={['75vw', '60vw']}
       invertX
-      invertY
     />
 
     <Triangle
       color="backgroundDark"
-      height={['25vh', '20vh']}
+      height={['20vh', '20vh']}
       width={['100vw', '100vw']}
+      invertX
       invertY
     />
   </div>
@@ -81,17 +73,16 @@ const Person = ({ name, description, social, type, joinedDate, logo }) => (
         <CardImage src={logo.image.src} alt={logo.title} />
         <CardTag>
           <Flex
+            id="social"
             style={{
               float: 'right',
             }}
           >
-            <Fade right>
-              {social.map(({ id, ...rest }) => (
-                <Box key={id} mx={1} fontSize={5}>
-                  <SocialLink {...rest} invert />
-                </Box>
-              ))}
-            </Fade>
+            {social.map(({ id, ...rest }) => (
+              <Box key={id} mx={1} fontSize={5}>
+                <SocialLink {...rest} />
+              </Box>
+            ))}
           </Flex>
           <ImageSubtitle
             bg="primaryLight"
