@@ -34,6 +34,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.10.1",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "chromata": "https://github.com/michaelbromley/chromata.git",
     "emotion-theming": "^10.0.14",
     "gatsby": "^2.13.53",
     "gatsby-image": "^2.2.8",

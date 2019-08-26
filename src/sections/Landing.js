@@ -6,9 +6,12 @@ import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
 import Triangle from '../components/Triangle';
+import ChromataLogo from '../components/ChromataLogo';
 
 import socialLinks from '../static/social';
 import values from '../static/values';
+
+import chromataImg from '../static/logos/gdm-logo-for-chromata.svg';
 
 const Background = () => (
   <div>
@@ -56,6 +59,7 @@ const LandingPage = () => (
       >
         {`${name}`}
       </Heading>
+      <ChromataLogo imgSrc={chromataImg} />
 
       <Heading
         as="h2"
