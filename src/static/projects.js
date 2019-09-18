@@ -20,12 +20,12 @@ const projects = [
     },
   },
   {
-    id: 'good-data-guideline',
-    name: 'Good Data Guidelines',
+    id: 'good-data-api',
+    name: 'Good Data API',
     description:
-      'A set of guidelines for best practice when handling personal data.',
-    projectUrl: 'https://github.com/good-data-movement/guidelines',
-    repositoryUrl: 'https://github.com/good-data-movement/guidelines',
+      'API specification to make & respond to data subject access requests',
+    projectUrl: 'https://github.com/good-data-movement/API',
+    repositoryUrl: 'https://github.com/good-data-movement/API',
     publishedDate: '2019',
     type: 'resource',
     logo: {
@@ -34,26 +34,46 @@ const projects = [
         src: logo2,
       },
     },
-  },
-  {
-    id: 'good-data-alliance',
-    name: 'Good Data Alliance',
-    description:
-      'Community-vetted association of companies ascribing to the Good Data Guidelines.',
-    projectUrl: 'https://github.com/good-data-movement/alliance',
-    repositoryUrl: 'https://github.com/good-data-movement/alliance',
-    publishedDate: '2019',
-    type: 'initiative',
-    logo: {
-      title: 'Logo alt',
-      image: {
-        src: logo2,
-      },
-    },
-  },
+  }
+  
 ];
 
-/* Useful for future when have image transformations or headless CMS.
+/*
+ * Potential Projects in future:
+{
+	id: 'good-data-guideline',
+	name: 'Good Data Guidelines',
+	description:
+		'A set of guidelines for best practice when handling personal data.',
+  projectUrl: 'https://github.com/good-data-movement/manifesto/blob/master/alliance.md',
+	repositoryUrl: 'https://github.com/good-data-movement/manifesto',
+	publishedDate: '2019',
+	type: 'resource',
+	logo: {
+		title: 'Logo alt',
+		image: {
+			src: logo2,
+		},
+	}
+},
+{
+  id: 'good-data-alliance',
+  name: 'Good Data Alliance',
+  description:
+    'Community-vetted association of companies ascribing to the Good Data Guidelines.',
+  projectUrl: 'https://github.com/good-data-movement/manifesto/blob/master/guidelines.md',
+  repositoryUrl: 'https://github.com/good-data-movement/manifesto',
+  publishedDate: '2019',
+  type: 'initiative',
+  logo: {
+    title: 'Logo alt',
+    image: {
+      src: logo2,
+    },
+  },
+}
+
+Useful for future when have image transformations or headless CMS.
 projects {
   id
   name

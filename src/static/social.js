@@ -7,7 +7,7 @@ const socialLinks = [
   },
   {
     id: 'discord',
-    url: 'https://discord.com/',
+    url: 'https://discord.gg/78r9eSZ',
     name: 'Discord',
     fontAwesomeIcon: ['fab', 'discord'],
   },
