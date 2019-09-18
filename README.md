@@ -4,6 +4,12 @@ The Good Data Movement website is our portal to the outside world.
 
 This website should act as a hub for the various projects & initiatives of the Good Data Movement & other similar organisations.
 
+## Auto-deployment
+
+Do not merge anything to the `master` branch.
+
+Pull requests merged into `development` will be automatically built & deployed to `master`.
+
 ## Roadmap
 
 ### Release 1: Barebones
@@ -74,10 +80,6 @@ NVM (Node Version Manager) is a great tool for managing your Node.js environment
 The following is taken from _yarn_'s official [installation guide]() for Ubuntu.
 
 Please consult _yarn_'s documentation for installing on other systems or for more information.
-
-```
-
-```
 
 If you install node.js using nvm, using the `--ignore-...` when installing yarn:
 `sudo apt install yarn --ignore-peer-dependencies`
